@@ -105,11 +105,33 @@ var stud=[
 
 console.log(stud[1]);
 console.log(stud[3].name);
+
+
+
+function changeText(id){
+    id.innerHTML="YOU CLICKED";
+}
+
+function time(){
+    var time=document.getElementById("t")
+    time.innerHTML=Date();
+}
 </script>
 
 <div class="header">
     <h1 align="center">MY FIRST JAVASCRIPT PAGE</h1>
 </div>     
+
+<div class="container">
+<button onclick="changeText(this)">click me
+</button>
+
+<h2 id="t"></h2>
+<button onclick="time()">display
+</button>
+
+</div>
+
 </body>
 </html>
 
