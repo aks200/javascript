@@ -109,3 +109,55 @@ function time(){
     var time=document.getElementById("t")
     time.innerHTML=Date();
 }
+
+
+function arr(){
+var veg=['tomato','potato','onion','ladyfingers'];
+veg.push('peas');
+var len=veg.length;
+var txt = "<ul>";
+for(var i=0;i<len;i++)
+{
+    txt+="<li>" + veg[i] + "</li>";
+}
+
+t=t+"</ul>";
+
+document.getElementById("demo").innerHTML = "list:" +txt;
+}
+
+
+function sorting(){
+    var nos=[10,1,15,40,20];
+    var s=nos.sort(function(a,b) {return(b-a)});
+    document.getElementById("demo").innerHTML = "descending order "+ s;
+    document.getElementById("demo").innerHTML = "max no: "+ s[0];
+
+}
+
+function color1()
+{
+    var col=document.getElementById("myInput").value;
+    var txt;
+
+    switch(col)
+    {
+        case "blue":
+        txt="You have selected blue color";
+        break;
+
+        case "red":
+        txt="You have selected red color";
+        break;
+
+        case "green":
+        txt="You have selected green color";
+        break;
+
+        default:
+            txt = "Unknown color name";
+
+    }
+
+    document.getElementById("demo1").innerHTML=txt;
+}
