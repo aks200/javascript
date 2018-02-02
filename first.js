@@ -159,5 +159,12 @@ function color1()
 
     }
 
-    document.getElementById("demo1").innerHTML=txt;
+    document.getElementById("demo1").innerHTML="Switch case ex::"+ txt;
+}
+
+function testing()
+{
+    var text;
+    text=document.getElementById("demoreg").innerHTML;
+    document.getElementById("reg").innerHTML=/Y/.test(text);
 }
