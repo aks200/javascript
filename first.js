@@ -168,3 +168,19 @@ function testing()
     text=document.getElementById("demoreg").innerHTML;
     document.getElementById("reg").innerHTML=/Y/.test(text);
 }
+
+function er(){
+    var v,msg;
+    v=document.getElementById("myerror").value;
+    msg= document.getElementById("msg");
+    msg.innerHTML="";
+    try{
+        if(v>0) throw "positive";
+        if(v<0) throw "negative";
+        if(v==0) throw "zero";
+
+    }
+    catch(err){
+        msg.innerHTML="INPUT "+ err ;
+    }
+}
